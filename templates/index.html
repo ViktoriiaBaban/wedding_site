@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% load static %}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Приглашаем на свадьбу!</title>
+  <link rel="icon" href="../static/favicon.ico" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+<body class=" text ">
+<header class="d-flex flex-column">
+  <section class="main-page mb-4 ">
+    <div class="d-inline-flex flex-column-reverse flex-md-row  col-sm-12 justify-content-sm-center align-items-center px-5 px-md-0">
+      <h3 class="me-md-5 align-self-end  date mt-md-0 mt-3">07.07.2023</h3>
+      <img class="main-photo-1 img-fluid" src="../static/img/main_photo_1.png" alt="Кристина и Максим">
+    </div>
+    <h1 class="d-flex  mb-2 col-md-7 justify-content-center justify-content-md-end">Кристина & Максим</h1>
+    <div class="d-flex col-12  px-5 col-md-7 justify-content-md-end px-md-5 mb-2 mb-md-0">
+      <img class="main-photo-2" src="../static/img/main_photo_2.png" alt="Кристина и Максим">
+    </div>
+    <img class="flower-main " src="../static/img/flowers_1.png" alt="Цветы">
+  </section>
+  <nav class="navbar navbar-expand-lg mt-1 mt-sm-3 mt-md-4  ">
+    <div class="container-fluid justify-content-center align-items-center">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Переключатель навигации">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center align-items-center" id="navbarTogglerDemo01">
+        <ul class="navbar-nav mb-2 mb-lg-0">
+          <li class="nav-item ">
+            <a class="nav-link"  href="#timeline">Расписание</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="#hints">Наши пожелания</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#map">Карта</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#fos">Отметить присутствие</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+<main>
+  <section class="d-flex container  flex-column-reverse flex-md-row">
+    <div class="d-flex flex-column mt-5 greed pb-md-5">
+      <h2 class="h2-greeding align-self-start">Дорогой гость,</h2>
+      <p class="greeding-text pt-2 mb-lg-5 mb-3 col-md-10">Мы будем рады видеть тебя на своей свадьбе! На этом сайте ты можешь ознакомиться с основными моментами нашего дня. Также просим тебя подтвердить свое присутствие, воспользовавшись формой
+        в конце страницы.</p>
+      <button class="text mt-4 align-self-center" href="#fos">Подтвердить присутствие</button>
+    </div>
+    <div class="mx-2 mt-5 d-flex flex-column ">
+      <div class="polaroid align-self-center"></div>
+      <img class="flower-polaroid " src="../static/img/flower_decorate.png" alt="Цветочное украшение">
+    </div>
+  </section>
+  <section class="d-flex timeline-section" id="timeline">
+    <aside class="col-1 d-none d-md-block">
+      <img src="../static/img/Flowers.png" alt="Цветы сбоку">
+    </aside>
+    <div class="d-flex flex-column container align-items-center">
+      <h2 class="mb-5">Расписание</h2>
+      <div class="mt-3 timeline">
+        <div class="con left ">
+          <img class="icon element-animation" src="../static/img/champagne-glass.svg" alt="Сбор гостей">
+          <div class="content element-animation left-animate">
+            <p>16:00</p>
+            <p>Сбор гостей</p>
+          </div>
+        </div>
+        <div class="con right">
+          <img class="icon element-animation" src="../static/img/wedding-ring.svg" alt="Церемония">
+          <div class="content element-animation right-animate">
+            <p>17:00</p>
+            <p>Церемония</p>
+          </div>
+        </div>
+        <div class="con left">
+          <img class="icon element-animation" src="../static/img/banquet.svg" alt="Банкет">
+          <div class="content element-animation left-animate">
+            <p>17:30</p>
+            <p>Банкет</p>
+          </div>
+        </div>
+        <div class="con right">
+          <img class="icon element-animation" src="../static/img/dance.svg" alt="Танец">
+          <div class="content element-animation right-animate">
+            <p>Первый танец</p>
+          </div>
+        </div>
+        <div class="con left">
+          <img class="icon element-animation" src="../static/img/cake.svg" alt="Торт">
+          <div class="content element-animation left-animate">
+            <p>Свадебный торт</p>
+          </div>
+        </div>
+        <div class="con right">
+          <img class="icon element-animation" src="../static/img/sparkler_1.svg" alt="Конец">
+          <div class="content element-animation right-animate">
+            <p>23:00</p>
+            <p>Окончание вечера</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="mb-5" id="hints">
+    <h2>Подсказки и пожелания</h2>
+    <div class="container hints">
+      <div class="hint left gifts element-animation down-animate">
+        <h3>Подарки</h3>
+        <p>Не ломайте голову над подарками. Ваши пожелания в конвертах помогут осуществить наши мечты.</p>
+      </div>
+      <div class="hint right dress element-animation down-animate">
+        <h3>Дресс-код</h3>
+        <p>Мы будем рады если вы поддержите цветовую гамму нашей свадьбы:</p>
+        <div class="palitra">
+          <div class="d-flex justify-content-between align-content-between">
+            <div class="circle blue "></div>
+            <div class="circle dark-blue "></div>
+            <div class="circle pink"></div>
+            <div class="circle bej"></div>
+            <div class="circle green"></div>
+            <div class="circle brown"></div>
+          </div>
+        </div>
+      </div>
+      <div class="hint left mood element-animation down-animate">
+        <img class="img-fluid moodbord" src="../static/img/moodbord.jpg" alt="Свадебный мудборд">
+      </div>
+      <div class="hint right flower element-animation down-animate">
+        <h3>Цветы</h3>
+        <p>Будем рады, если вместо цветов вы подарите бутылочку вашего любимого вина.</p>
+      </div>
+    </div>
+  </section>
+  <section class="map d-flex justify-content-md-between flex-column-reverse flex-md-row" id="map">
+    <iframe class="align-self-center" src="https://yandex.ru/map-widget/v1/?um=constructor%3Ace1937416493bd73233b123d7db222373b527549002cef47078c8c1b30f16854&amp;source=constructor" width="495" height="471" frameborder="0"></iframe>
+    <div class="d-flex align-items-center flex-column mt-3">
+      <h2 class=" align-self-center">Где будет проходить торжество</h2>
+      <p class="mt-5">
+        <svg id="Capa_1" width="40px" height="40px" enable-background="new 0 0 512 512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="m421 165c0-90.981-74.019-165-165-165s-165 74.019-165 165c0 32.765 9.586 64.429 27.681 91.509l57.135 86.414c-39.986 11.753-84.816 37.66-84.816 79.077 0 64.381 99.946 90 165 90 65.558 0 165-25.835 165-90 0-41.368-44.737-67.297-84.816-79.077l57.094-86.353c18.136-27.141 27.722-58.805 27.722-91.57zm-30 257c0 28.379-55.442 60-135 60s-135-31.621-135-60c0-21.029 29.262-42.078 72.247-52.714l62.753 94.911 62.753-94.911c42.985 10.636 72.247 31.685 72.247 52.714zm-22.706-182.037-112.294 169.84-112.335-169.9c-14.828-22.191-22.665-48.092-22.665-74.903 0-74.439 60.561-135 135-135s135 60.561 135 135c0 26.811-7.837 52.712-22.706 74.963z" fill="#000000" style="fill: rgb(44, 52, 77);"></path><path d="m293.211 90c-15.918 0-28.315 7.129-37.211 16.934-8.896-9.805-21.293-16.934-37.211-16.934-29.602 0-52.789 24.129-52.789 54.932 0 32.35 25.138 53.485 59.931 82.736 20.298 17.066 20.497 17.493 30.069 25.719 9.949-8.547 9.517-8.435 28.939-24.739 34.115-28.638 61.061-51.258 61.061-83.716 0-30.803-23.188-54.932-52.789-54.932zm-27.561 115.671c-3.157 2.65-6.368 5.346-9.644 8.119-3.682-3.125-7.258-6.132-10.771-9.084-32.352-27.201-49.235-42.213-49.235-59.774 0-14.214 9.797-24.932 22.789-24.932 14.373 0 20.837 15.275 22.476 19.956l3.516 10.044h22.438l3.516-10.044c1.639-4.682 8.103-19.956 22.476-19.956 12.992 0 22.789 10.718 22.789 24.932 0 18.473-21.119 36.201-50.35 60.739z" fill="#000000" style="fill: rgb(44, 52, 77);"></path></svg>
+        Шувалофф Холидэйс, ул. Ломоносова, 102</p>
+    </div>
+    <img width="350" height="274" class="align-self-end d-none d-lg-block" src="../static/img/flower_map.svg" alt="Цветок">
+    <img width="255" height="179" class="align-self-end d-none d-md-block d-lg-none" src="../static/img/flower_map.svg" alt="Цветок">
+  </section>
+  <section class="fos d-flex flex-column" id="fos">
+    <h2 class="mt-4">Просим Вас отметить своё присутствие!</h2>
+    <div class="d-flex container-fluid align-self-start flex-column-reverse flex-md-row">
+      <img class="flower-fos align-self-md-end " width="380" height="254" src="../static/img/flower_fos.svg" alt="Верхняя половина цветка">
+      <form class="mt-4 d-flex flex-column" id="form" method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        <fieldset class="form-floating mb-3 g-form__input-wrapper">
+          <input type="text" class="form-control form-control-sm" name="fio" id="fio" placeholder="Бабан Виктория" required>
+          <label for="fio">ФИО</label>
+        </fieldset>
+        <p>Будете ли вы на нашей свадьбе?</p>
+        <fieldset class="btn-group mb-3 pe-2 g-form__input-wrapper">
+          <input type="radio" class="btn-check " name="attend" value="Да" id="yes" autocomplete="off">
+          <label class="btn btn-outline " for="yes">Конечно приду!</label>
+          <input type="radio" class="btn-check " name="attend" value="Нет" id="no" autocomplete="off">
+          <label class="btn btn-outline" for="no">К сожалению, нет</label>
+        </fieldset>
+        <div class="g-form__button-wrapper align-self-center">
+          <button type="submit">Отправить</button>
+        </div>
+      </form>
+      <div class="modal fade" id="fos-success" role="dialog" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="staticBackdropLabel">Спасибо!</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+            </div>
+            <div class="modal-body">
+              <p>Форма успешно отправлена</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      {% if success %}
+      <script>
+        $(document).ready(function() {
+          $("#fos-success").modal("show");
+        });
+      </script>
+      {% endif %}
+    </div>
+  </section>
+</main>
+<footer>
+  <img width="380" height="86" src="../static/img/flower_timer.svg" alt="Нижняя половина цветка">
+</footer>
+</body>
+</html>
+
+<script>
+  function onEntry(entry) {
+    entry.forEach(change => {
+      if (change.isIntersecting) {
+        change.target.classList.add('element-show');
+      }
+    });
+  }
+  let options = { threshold: [0.5] };
+  let observer = new IntersectionObserver(onEntry, options);
+  let elements = document.querySelectorAll('.element-animation');
+  for (let elm of elements) {
+    observer.observe(elm);
+  }
+</script>
